@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -241,7 +243,7 @@ h1,h2{font-weight:800}
 .phead .blob{background:var(--c2)}
 @media (max-width:900px){nav.top{border-radius:22px}.pl-hero .wrap{grid-template-columns:1fr}.pola{height:460px}.pola figure{width:220px}.pola figure img{height:200px}.pl-svc,.pl-rev{grid-template-columns:1fr}.pl-mosaic{grid-template-columns:1fr 1fr}}
 </style></head><body class="L-play P-index"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="pickell.png" alt="">Pickell Plumbing</a>
-<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5128258434">(512) 825-8434</a><a class="btn p" href="quote.html">Book a plumber</a></div>
+<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5128258434">(512) 825-8434</a><a class="btn p" href="quote.html">Book a plumber</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="pl-hero"><span class="blob" style="width:420px;height:420px;background:var(--c2);left:-120px;top:40px"></span><span class="blob" style="width:300px;height:300px;background:var(--c1);right:-60px;bottom:-40px;animation-delay:-3s"></span>
 <div class="wrap"><div class="anim"><div class="eyebrow">Residential &amp; commercial plumbing</div><h1>Round Rock's plumber. Never in a <span>pickle.</span></h1><p>4.9 stars across 182 Google reviews and a lime-green truck you can&#x27;t miss. Same-day service from Danny Pickell&#x27;s crew.</p>
 <div style="display:flex;gap:14px;margin-top:34px;flex-wrap:wrap"><a class="btn p" href="quote.html">Book a plumber <span class="ar">→</span></a><a class="btn s" href="tel:5128258434">Call (512) 825-8434</a></div></div>

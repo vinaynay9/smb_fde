@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -241,7 +243,7 @@ h1,h2{font-weight:800}
 .phead .blob{background:var(--c2)}
 @media (max-width:900px){nav.top{border-radius:22px}.pl-hero .wrap{grid-template-columns:1fr}.pola{height:460px}.pola figure{width:220px}.pola figure img{height:200px}.pl-svc,.pl-rev{grid-template-columns:1fr}.pl-mosaic{grid-template-columns:1fr 1fr}}
 </style></head><body class="L-play P-services"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="readyhands.png" alt="">Ready Hands Handyman</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:7373069461">(737) 306-9461</a><a class="btn p" href="quote.html">Book Brian</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:7373069461">(737) 306-9461</a><a class="btn p" href="quote.html">Book Brian</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><span class="blob" style="width:300px;height:300px;right:8%;top:30px"></span><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">Ready Hands Handyman</div><h1>Services</h1><p class="lead">Ready Hands is owned by Brian, a U.S. Army veteran (2000 to 2012) who treats your honey-do list like a mission.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SdecEZ3fTApJ_HlLKDw4BJxpim-BUuh3oePETk3qs7OMBlQrcYCud91LA8vIb-HR_4jOdm8YBUp_7gKqLTaNp5taEGjODaZhe4BFUjvv_bSwM4fZI0leSe0UbKxG5X9Cs6pUV9T5i2N-k=w1200" alt="Warm-white roofline" loading="lazy"><figcaption>Warm-white roofline</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>Permanent lighting</h3><p class="lead" style="font-size:17px">Govee and permanent eave lights, aligned, secured and set up on your phone.</p><ul><li>Holiday and game-day colors</li><li>Warm white for every day</li><li>App setup included</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R55it1wjB7Az-sHSZhVnAQ2Ofy3Rui8awM7jWKkCdvPFcFiVUOSUhLebSzd7C5-Vz8QAHUeUMGAk0j3Cq4Mj1icZeeUd4e3rc5t-a8aFz2BxnwomsbO2PrZ_Oxx7_8u15QwTxKOOId-Fhv=w1200" alt="Poolside pergola" loading="lazy"><figcaption>Poolside pergola</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>Pergolas &amp; patio covers</h3><p class="lead" style="font-size:17px">Louvered pergolas and patio covers that make the backyard usable year-round.</p><ul><li>Louvered aluminum pergolas</li><li>Patio covers</li><li>Porch swings and swing beds</li></ul>

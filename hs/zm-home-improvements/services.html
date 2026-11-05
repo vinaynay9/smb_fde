@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -195,7 +197,7 @@ nav.top{background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:
 .links{font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px}
 .btn{border-radius:2px;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;padding:16px 26px}
 h1,h2,h3{font-weight:500}
-.lx-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;padding:70px 0 110px}
+.lx-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;padding:70px 28px 110px}
 .lx-hero h1{font-size:clamp(46px,6vw,84px);color:var(--c1);margin:22px 0 24px;font-weight:400}
 .lx-hero h1 em{font-style:italic;color:var(--c2)}
 .lx-hero p{font-size:19px;color:var(--muted);max-width:520px}
@@ -237,7 +239,7 @@ h1,h2,h3{font-weight:500}
 .card{box-shadow:none;border:1px solid var(--line)}
 @media (max-width:900px){.lx-hero{grid-template-columns:1fr}.lx-stack{height:440px}.lx-list a{grid-template-columns:40px 1fr 30px}.lx-list p,.lx-list .peek{display:none}.lx-strip .ph{width:280px;height:360px}}
 </style></head><body class="L-luxe P-services"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lp" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9STb5fTUWPCiuDWmaXvIHefyLRprwuBYah6ey6TcOaiH0Sw9GPU2sylrnnCJAo8n7j3ExshuWF5ht71mQhKhPRmU48AlLxBELzarQkvToj4CyCOBFXdHdHGBOsx1Je3O6l6Pd-qI5nyeQke=w200" alt="">ZM Home Improvements</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5125601400">(512) 560-1400</a><a class="btn p" href="quote.html">Start your remodel</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5125601400">(512) 560-1400</a><a class="btn p" href="quote.html">Start your remodel</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">ZM Home Improvements</div><h1>Services</h1><p class="lead">ZM Home Improvements is run by Zeev, who manages every project personally: one point of contact from the first walkthrough to the final punch list.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SQJpd_5uorbHfYEkZ21-TttgRXbgOrpjYAVZaDu4E8Ew9aS9m2XI44dWMRWAZ9zEZRnPIaF574-mCF3q2S50whgfr9s5YUeN9e7PCkMCO1aV7ktJbensvY_F1GqBHNLHKyCUfDK38g2jg=w1200" alt="Primary bath with curved glass shower" loading="lazy"><figcaption>Primary bath with curved glass shower</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>Bathroom remodels</h3><p class="lead" style="font-size:17px">Primary suites, hall baths and powder rooms rebuilt around how you actually use them.</p><ul><li>Walk-in and curbless showers</li><li>Soaking and freestanding tubs</li><li>Custom vanities and backlit mirrors</li><li>Tile from floor to ceiling</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SPjn_IP5Im0ZyjAej_0OFAbyfk1VD4-VVT5zO4eu626p42pJ9Oy-8AyW9LMnVjrmFCbxUQrtQDvs-zBkxsZIqI5badGbkmnq2kDzqF-mSdLpDkqKpqK0-OK_uvOpT12tqx17Ew=w1200" alt="Green cabinetry and quartz" loading="lazy"><figcaption>Green cabinetry and quartz</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>Kitchen remodels</h3><p class="lead" style="font-size:17px">Cabinetry, counters, backsplash and lighting, planned around how you cook and gather.</p><ul><li>Painted and stained cabinetry</li><li>Quartz and stone counters</li><li>Backsplash and pendant lighting</li><li>Layout and island changes</li></ul>

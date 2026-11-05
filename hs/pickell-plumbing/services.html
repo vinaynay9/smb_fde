@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -241,7 +243,7 @@ h1,h2{font-weight:800}
 .phead .blob{background:var(--c2)}
 @media (max-width:900px){nav.top{border-radius:22px}.pl-hero .wrap{grid-template-columns:1fr}.pola{height:460px}.pola figure{width:220px}.pola figure img{height:200px}.pl-svc,.pl-rev{grid-template-columns:1fr}.pl-mosaic{grid-template-columns:1fr 1fr}}
 </style></head><body class="L-play P-services"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="pickell.png" alt="">Pickell Plumbing</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5128258434">(512) 825-8434</a><a class="btn p" href="quote.html">Book a plumber</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5128258434">(512) 825-8434</a><a class="btn p" href="quote.html">Book a plumber</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><span class="blob" style="width:300px;height:300px;right:8%;top:30px"></span><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">Pickell Plumbing</div><h1>Services</h1><p class="lead">Pickell Plumbing is owned by James Daniel &quot;Pickle&quot; Pickell and based on Louis Henna Blvd in Round Rock. Look for the lime-green truck.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SA_BR6USJvpSRkqucsO3onUQWO7kllipXlMm4VLXOuvUFaZyBBovtl3V6ImVgRVO9ZSr3xdkRwz_ai5gzcKqz-0eG2gDGUUW48XhJIO2CSmNwP3EiYEUPkGLJ7ZmaJNrTh9qNd=w1200" alt="Twin tankless water heaters" loading="lazy"><figcaption>Twin tankless water heaters</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>Water heaters</h3><p class="lead" style="font-size:17px">Tankless and tank water heaters repaired, replaced or upgraded.</p><ul><li>Tankless installs and descaling</li><li>Tank replacements</li><li>Same-day no-hot-water calls</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QGgzwbAc_BmQD34Nut3kqfpShkChlpg78p5vq1Ftp6EUAOxQx8NTtUAmbh5TCMS-7JEdhKO2mfNe5YDESqppz88zZQ00n058yWT3E4rQS9IEdIRlLJnoHe4ekBdMuFzYV8Cz6E=w1200" alt="Softener + filtration install" loading="lazy"><figcaption>Softener + filtration install</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>Softeners &amp; filtration</h3><p class="lead" style="font-size:17px">Fix hard water and low pressure for good.</p><ul><li>Whole-home softeners</li><li>Filtration systems</li><li>Cabinet-tucked installs</li></ul>

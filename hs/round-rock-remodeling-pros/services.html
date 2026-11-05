@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -195,7 +197,7 @@ nav.top{background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:
 .links{font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px}
 .btn{border-radius:2px;text-transform:uppercase;letter-spacing:.12em;font-size:12.5px;padding:16px 26px}
 h1,h2,h3{font-weight:500}
-.lx-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;padding:70px 0 110px}
+.lx-hero{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;padding:70px 28px 110px}
 .lx-hero h1{font-size:clamp(46px,6vw,84px);color:var(--c1);margin:22px 0 24px;font-weight:400}
 .lx-hero h1 em{font-style:italic;color:var(--c2)}
 .lx-hero p{font-size:19px;color:var(--muted);max-width:520px}
@@ -250,7 +252,7 @@ nav.top{background:rgba(17,33,28,.85)}
 .filters button{color:#eae6dc}
 .cal .off{color:#bbb}
 </style></head><body class="L-luxe P-services"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="rrpros.png" alt="">Round Rock Remodeling Pros</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5128836813">(512) 883-6813</a><a class="btn p" href="quote.html">Plan your remodel</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5128836813">(512) 883-6813</a><a class="btn p" href="quote.html">Plan your remodel</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">Round Rock Remodeling Pros</div><h1>Services</h1><p class="lead">Round Rock Remodeling Pros is a local remodeling team led by Kyle and Robert, with dedicated crews for kitchens and baths.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tr-NSdxE7mxBlen0gCq-CJdkYzUfa5gKCC2aJDKqMpd2FnQkBQcadLx1SWrb0jDYseBRd1uua4axlmffO52Gpx23qdBT8kWGOr_aW38_8K7XqVaHUgVy-79reN26F2tlecY2Ht=w1200" alt="Stone kitchen" loading="lazy"><figcaption>Stone kitchen</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>Kitchen remodels</h3><p class="lead" style="font-size:17px">Cabinets, islands, counters and lighting, from early-90s to brand new.</p><ul><li>Design and layout</li><li>Cabinetry and islands</li><li>Stone counters</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q8iQtxdQbd7YG4Z619Tk6iy7dTtB_aqEpX1BRqNEX1071EymPOW8l-hI0wo35OK_FgZninQGQ97SrIdz4wYiKv89I8YpIl--s5PTyaoXf6SJm_U30LWEPBBKfTf0SghhY6vS8E=w1200" alt="Master bath" loading="lazy"><figcaption>Master bath</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>Bathroom remodels</h3><p class="lead" style="font-size:17px">Primary baths, powder rooms, glass showers and tubs.</p><ul><li>Glass showers</li><li>Soaking tubs</li><li>Vanities and tile</li></ul>

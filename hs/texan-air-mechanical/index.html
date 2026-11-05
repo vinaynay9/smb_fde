@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -235,7 +237,7 @@ body.scrolled nav.top{background:color-mix(in srgb,var(--c1) 94%,black);}
 .app{margin-top:-40px;position:relative;z-index:3}
 @media (max-width:900px){.fh .wrap{grid-template-columns:1fr}.rate{justify-self:start}.ftiles{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}.links{color:var(--ink)}}
 </style></head><body class="L-full P-index"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="texanair.png" alt="">Texan Air Mechanical</a>
-<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5129038073">(512) 903-8073</a><a class="btn p" href="quote.html">Book a service call</a></div>
+<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5129038073">(512) 903-8073</a><a class="btn p" href="quote.html">Book a service call</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="fh"><div class="bgimg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9THOSmIpwxozeZ4hwfRBrmIIyJM8HhNLW-JPEQb5MXT88itZdyJTU5uH0ygr-u5nPrck1-EobGcXNfV9M7POBGzAaODR_ku-OM-FVaeqkfFAmJKJZA2aKDkKoXP0MvpVWQm8AjdSJUsfd_t=w2000" alt="" style="object-position:center"></div>
 <div class="wrap"><div class="anim"><div class="eyebrow">Heating &amp; air conditioning · Austin · Round Rock · Georgetown · Leander · Cedar Park</div><h1>Austin AC repair that stays until it&#x27;s fixed.</h1><p>Carlos takes the time to find the real problem, moves appointments up when it&#x27;s hot, and doesn&#x27;t leave until your air is cold.</p>
 <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap"><a class="btn p" href="quote.html">Book a service call <span class="ar">→</span></a><a class="btn s" href="book.html">Pick a time</a></div></div>

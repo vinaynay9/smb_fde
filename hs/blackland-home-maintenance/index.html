@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -226,7 +228,7 @@ nav.top{background:var(--bg);border-bottom:1px solid var(--line)}
 .phead .ph{height:340px}
 @media (max-width:900px){.sp-hero{height:auto}.sp-hero,.phead{grid-template-columns:1fr}.sp-hero .pics{height:420px}.sp-trust{grid-template-columns:1fr 1fr}.sp-svc,.sp-ba,.sp-rev{grid-template-columns:1fr}.sp-mini{grid-template-columns:1fr 1fr}}
 </style></head><body class="L-split P-index"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lw" src="blackland.png" alt="Blackland Home Maintenance"></a>
-<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:2092777526">(209) 277-7526</a><a class="btn p" href="quote.html">Get a quote</a></div>
+<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:2092777526">(209) 277-7526</a><a class="btn p" href="quote.html">Get a quote</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="sp-hero"><div class="txt anim"><div class="eyebrow">Carpentry, built-ins &amp; home repair · North Austin · Pflugerville</div><h1>Custom built-ins and carpentry for North Austin.</h1><p>15 years turning bland walls into built-in TV walls, shiplap, wainscoting and storage. Josh does the work himself.</p>
 <div style="display:flex;gap:14px;margin-top:34px;flex-wrap:wrap"><a class="btn p" href="quote.html">Get a quote <span class="ar">→</span></a><a class="btn s" href="work.html">See our work</a></div></div>
 <div class="pics"><figure class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReY8ujtEeXr5Yk_uAMKWHmZJ-UB-Z36slj3b-CfJfalp5GCzzzSV2q2nR9sHyH87CAeT-JUV9esvXrb4j7HdWKSVJsvoLoIrALYTmnD96eebJZrQXE7hn43zV1YrxvT9wSLoYG3kP7f0M=w1600" alt="" style="object-position:center"></figure><figure class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_Eq-hpxIH3RsRSDOftTAB6cKdc5SHBsJgbXZ1ElfGEEFOlNvLFPXSPMpV4YE9VxFlOih9ENYqhGkypFM4uhZtf5MMyw7opuvJg3vXsFNh_g2cPGCJA-fhGwkwuRIZnu3VLZPInz8vG6Kn=w800" alt=""></figure><figure class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXcLJYkWQQzcT_MJZomcC9aaWT2h6TG2zVBaV6OAG1mkzvxeopFpjNT1NB04IqVRgu-8tqkafoqmcSNM8cUejq8YdVBBWKy7YqKN__j9sPcf-4pH9YleKENN8yyNcQ5aHGLopx=w800" alt=""></figure></div></header>

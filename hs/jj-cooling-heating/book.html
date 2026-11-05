@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -234,7 +236,7 @@ h1,h2,.h2{text-transform:uppercase;font-weight:900;letter-spacing:-.02em}
 .phead .bd-big{bottom:-60px;font-size:16vw}
 @media (max-width:900px){.bd-hero .wrap{grid-template-columns:1fr}.bd-hero .pic{height:340px;clip-path:none}.bd-svc{grid-template-columns:1fr}.bd-row{grid-template-columns:1fr 1fr}.links{color:var(--ink)}}
 </style></head><body class="L-bold P-book"><div class="alert"><span class="dot"></span>AC out? John answers the phone. <a href="tel:5125966905">Call (512) 596-6905</a> or <a href="book.html">book online</a></div><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="jj.png" alt="">J&amp;J Cooling &amp; Heating</a>
-<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5125966905">(512) 596-6905</a><a class="btn p" href="quote.html">Book a service call</a></div>
+<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5125966905">(512) 596-6905</a><a class="btn p" href="quote.html">Book a service call</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead" style="padding:90px 0 80px"><span class="bd-big">Book a visit</span><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Book a visit</div><div class="eyebrow">J&amp;J Cooling &amp; Heating</div><h1>Book a visit</h1><p class="lead">Choose a day and an arrival window. J&amp;J confirms by text.</p></div></div></header>
 <section style="padding-top:50px"><div class="app"><div class="panel rv"><div class="step"><div class="eyebrow">Step 2 of 3</div>
 <h2 style="font-size:32px;color:var(--c1);margin-top:8px">Pick a time</h2>

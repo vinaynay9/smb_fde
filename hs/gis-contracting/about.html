@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -235,7 +237,7 @@ body.scrolled nav.top{background:color-mix(in srgb,var(--c1) 94%,black);}
 .app{margin-top:-40px;position:relative;z-index:3}
 @media (max-width:900px){.fh .wrap{grid-template-columns:1fr}.rate{justify-self:start}.ftiles{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}.links{color:var(--ink)}}
 </style></head><body class="L-full P-about"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="gis.png" alt="">G.I.S Contracting</a>
-<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l on" href="about.html">About</a><a class="l" href="tel:5128016132">(512) 801-6132</a><a class="btn p" href="quote.html">Get a project quote</a></div>
+<div class="links"><a class="l" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l on" href="about.html">About</a><a class="l tel" href="tel:5128016132">(512) 801-6132</a><a class="btn p" href="quote.html">Get a project quote</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><div class="bgimg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_I2MMugndM3-tKWvUkdulzWcDr0NEbI1U6PGjbumwdAXRn3ePf91h3sOj4uwBCY2Lt4AF9wMU3cdvAJYZ3wMXBthtTSBGPJkaM6G8FYaBUKIBwbvzzzGBH98hJGx-auTrAZ9o=w1800" alt=""></div><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / About</div><div class="eyebrow">G.I.S Contracting</div><h1>About GIS</h1><p class="lead">G.I.S Contracting works out of South Austin on S 3rd St. Mr. Gomez leads the crew, Tony runs the jobs and Ann in the office keeps every client in the loop.</p></div></div></header>
 <section style="padding-top:60px"><div class="wrap abt"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Q_I2MMugndM3-tKWvUkdulzWcDr0NEbI1U6PGjbumwdAXRn3ePf91h3sOj4uwBCY2Lt4AF9wMU3cdvAJYZ3wMXBthtTSBGPJkaM6G8FYaBUKIBwbvzzzGBH98hJGx-auTrAZ9o=w1400" alt="The GIS trailer" loading="lazy"><figcaption>The GIS trailer</figcaption></figure><div><div class="eyebrow rv">Our story</div><h2 class="h2 rv">Since 1998</h2><p class="rv" style="--d:0.0s;font-size:18px">G.I.S Contracting has been building and remodeling in Austin since 1998, working out of South Austin on S 3rd St.</p><p class="rv" style="--d:0.1s;font-size:18px">Mr. Gomez leads the crew, Tony runs the jobs and Ann in the office keeps every client in the loop. Customers call out how responsive they are, how clean they keep the house, and that Tony drove the icy roads during the Big Freeze to get a family&#x27;s water back on.</p>
 <div style="margin-top:30px"><a class="btn d" href="quote.html">Get a project quote <span class="ar">→</span></a></div></div></div></section>

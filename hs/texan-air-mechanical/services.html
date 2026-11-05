@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -235,7 +237,7 @@ body.scrolled nav.top{background:color-mix(in srgb,var(--c1) 94%,black);}
 .app{margin-top:-40px;position:relative;z-index:3}
 @media (max-width:900px){.fh .wrap{grid-template-columns:1fr}.rate{justify-self:start}.ftiles{grid-template-columns:1fr}.fgrid{grid-template-columns:1fr 1fr}.links{color:var(--ink)}}
 </style></head><body class="L-full P-services"><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="texanair.png" alt="">Texan Air Mechanical</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5129038073">(512) 903-8073</a><a class="btn p" href="quote.html">Book a service call</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5129038073">(512) 903-8073</a><a class="btn p" href="quote.html">Book a service call</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead"><div class="bgimg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SvrV_GNSfX1-eogRZgG0E_iCoqP0rvPdK-9psAsSEJK-3ivCcfKP5nUCAJ--uok696Nyk0eCtVO4mFvILjJfHst2d02oMDISl2kkOcsorL_ZbsO_xMkj7_mWZrO4HkTJqxG07iodg5TXTU=w1800" alt=""></div><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">Texan Air Mechanical</div><h1>Services</h1><p class="lead">Texan Air Mechanical is Carlos, an Austin HVAC tech who&#x27;d rather explain the problem than upsell you.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SvrV_GNSfX1-eogRZgG0E_iCoqP0rvPdK-9psAsSEJK-3ivCcfKP5nUCAJ--uok696Nyk0eCtVO4mFvILjJfHst2d02oMDISl2kkOcsorL_ZbsO_xMkj7_mWZrO4HkTJqxG07iodg5TXTU=w1200" alt="Condenser fan, checked" loading="lazy"><figcaption>Condenser fan, checked</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>AC repair</h3><p class="lead" style="font-size:17px">Diagnosis and repair on all major brands, with the whole system checked before Carlos leaves.</p><ul><li>Not cooling, not turning on</li><li>Thermostat and electrical issues</li><li>Second opinions after other companies</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9So6wptiqa_MsgUL19pyRs3GINntlTih5JZd7_4gN_E2ClGc0aKMu5bLXitVgUdmTC4wQyl-8uzlQfx5t3ML_R79HpPFMAfNkK_fRI38s74PX5MfHE8P-sI5c6W7ubU9LmGZpbKeLjloBOR=w1200" alt="Amana condenser" loading="lazy"><figcaption>Amana condenser</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>System replacement</h3><p class="lead" style="font-size:17px">Goodman and Amana systems sized and installed properly.</p><ul><li>Condensers and coils</li><li>New pads and disconnects</li><li>Clean line-set routing</li></ul>

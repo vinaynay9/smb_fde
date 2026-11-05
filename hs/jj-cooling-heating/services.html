@@ -30,12 +30,14 @@ section{padding:100px 0}
 /* nav */
 nav.top{position:sticky;top:0;z-index:40;transition:background .3s,box-shadow .3s,color .3s}
 nav.top .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
-.brand{font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
+.brand{white-space:nowrap;font-size:22px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:12px}
 .brand img.lm{height:56px;width:auto;max-width:96px;object-fit:contain}
 .brand img.lw{height:60px;width:auto;max-width:230px;object-fit:contain}
-.brand img.lp{height:54px;width:54px;object-fit:cover;border-radius:12px}
+.brand img.lp{height:56px;width:56px;object-fit:contain;border-radius:12px;background:#fff}
 .links{display:flex;gap:26px;align-items:center;font-size:15px;font-weight:600}
+.links a{white-space:nowrap}
 .links a.l{position:relative;padding:6px 0}
+@media (max-width:1180px) and (min-width:901px){.links{gap:18px}.links a.tel{display:none}}
 .links a.l:after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--c2);transform:scaleX(0);transform-origin:left;transition:transform .3s var(--ease)}
 .links a.l:hover:after,.links a.l.on:after{transform:scaleX(1)}
 .burger{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:inherit}
@@ -234,7 +236,7 @@ h1,h2,.h2{text-transform:uppercase;font-weight:900;letter-spacing:-.02em}
 .phead .bd-big{bottom:-60px;font-size:16vw}
 @media (max-width:900px){.bd-hero .wrap{grid-template-columns:1fr}.bd-hero .pic{height:340px;clip-path:none}.bd-svc{grid-template-columns:1fr}.bd-row{grid-template-columns:1fr 1fr}.links{color:var(--ink)}}
 </style></head><body class="L-bold P-services"><div class="alert"><span class="dot"></span>AC out? John answers the phone. <a href="tel:5125966905">Call (512) 596-6905</a> or <a href="book.html">book online</a></div><nav class="top"><div class="wrap"><a class="brand" href="index.html"><img class="lm" src="jj.png" alt="">J&amp;J Cooling &amp; Heating</a>
-<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l" href="tel:5125966905">(512) 596-6905</a><a class="btn p" href="quote.html">Book a service call</a></div>
+<div class="links"><a class="l on" href="services.html">Services</a><a class="l" href="work.html">Our work</a><a class="l" href="reviews.html">Reviews</a><a class="l" href="about.html">About</a><a class="l tel" href="tel:5125966905">(512) 596-6905</a><a class="btn p" href="quote.html">Book a service call</a></div>
 <button class="burger" aria-label="Menu"><i></i><i></i><i></i></button></div></nav><header class="phead" style="padding:90px 0 80px"><span class="bd-big">Services</span><div class="wrap"><div class="anim"><div class="crumb"><a href="index.html">Home</a> / Services</div><div class="eyebrow">J&amp;J Cooling &amp; Heating</div><h1>Services</h1><p class="lead">J&amp;J Cooling &amp; Heating is owned and run by John Jaimes. When you call, you talk to the person doing the work, and he explains every option before anything gets replaced.</p></div></div></header>
 <section style="padding-top:40px"><div class="wrap"><div class="srow" id="s0"><figure class="ph rv l" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SM71gHrKuIMZW9JgoqASLxWZZT72XJuclG5zgb4NanaiGJc86uYr1lVfmg-x6u9PYJBVph-ZD56ncMKazXZk02MnlcNOAQiuRz6vTzwcW1bnUnS2qVmHZX6L0Nm9yJIJo4TTdRyw=w1200" alt="Service call" loading="lazy"><figcaption>Service call</figcaption></figure><div class="rv"><div class="eyebrow">01</div><h3>Emergency AC repair</h3><p class="lead" style="font-size:17px">No cool air in July? Call or book online and John gets you on the schedule fast.</p><ul><li>Same-day and next-day visits</li><li>Capacitors, motors and refrigerant</li><li>Straight answers before any work starts</li></ul>
 <a class="btn p" href="quote.html">Get a quote for this <span class="ar">→</span></a></div></div><div class="srow" id="s1"><figure class="ph rv r" style=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SRmreWSjUokIPvCvDDMcwuOC51dF0MF919Rk1MGWXYSPmCien1FYAm3sfT57buKo8WiB-mnkTOspacbVcAc6rfTWO7g3zJPrGXp8uHGbq2bpgV-h4zKTt7BfsXsavekvlaxQc=w1200" alt="Residential install" loading="lazy"><figcaption>Residential install</figcaption></figure><div class="rv"><div class="eyebrow">02</div><h3>New system installs</h3><p class="lead" style="font-size:17px">Right-sized systems installed clean, explained in plain English.</p><ul><li>Free in-home estimate</li><li>Trane and American Standard equipment</li><li>Old equipment hauled away</li></ul>
