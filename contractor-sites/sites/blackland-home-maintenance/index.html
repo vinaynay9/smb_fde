@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blackland Home Maintenance</title><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:wght@400;500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--c1:#1a1714;--c2:#b5835a;--bg:#f6f2ec;--ink:#1a1714;--muted:color-mix(in srgb,var(--ink) 62%,white)}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3,.brand{font-family:'DM Serif Display',serif;line-height:1.08;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-size:24px;font-weight:700;color:var(--c1);display:flex;align-items:center;gap:10px}
+.mark{width:36px;height:36px;border-radius:9px;background:var(--c1);color:var(--bg);display:grid;place-items:center;font-size:15px;font-weight:800}
+.mark i{color:var(--c2);font-style:normal}
+.links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:500}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:15px;border:0;cursor:pointer}
+.btn.p{background:var(--c2);color:#fff}
+.btn.s{background:transparent;color:inherit;border:1.5px solid currentColor}
+.btn.d{background:var(--c1);color:#fff}
+.hero{display:grid;grid-template-columns:1.08fr 1fr;min-height:620px;background:var(--c1);color:#fff}
+.hero .txt{padding:84px 56px 72px max(28px,calc((100vw - 1160px)/2 + 28px));display:flex;flex-direction:column;justify-content:center}
+.hero .ph{position:relative;overflow:hidden}
+.hero .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .ph .badge{position:absolute;left:24px;bottom:24px;background:#fff;color:var(--ink);border-radius:16px;padding:14px 18px;font-size:14px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4)}
+.hero .ph .badge b{font-size:20px;display:block;font-family:'DM Serif Display',serif}
+.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:12.5px;font-weight:700;opacity:.9}
+.hero h1{font-size:56px;max-width:620px;margin:16px 0 18px}
+.hero p{font-size:18px;max-width:520px;opacity:.88}
+.hero .ctas{display:flex;gap:12px;margin-top:30px}
+.stars{color:#f6b93b;letter-spacing:2px}
+.trust{background:var(--c1);color:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:26px 28px}
+.trust b{display:block;font-size:22px;font-family:'DM Serif Display',serif}
+.trust span{font-size:14px;opacity:.8}
+section{padding:96px 0}
+.h2{font-size:44px;max-width:640px;margin:10px 0 14px;color:var(--c1)}
+.lead{color:var(--muted);font-size:18px;max-width:600px}
+.svc{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:44px}
+.card{background:#fff;border-radius:18px;padding:26px;box-shadow:0 1px 0 rgba(0,0,0,.04),0 10px 30px -18px rgba(0,0,0,.25)}
+.card .n{width:38px;height:38px;border-radius:10px;background:color-mix(in srgb,var(--c2) 16%,white);color:var(--c2);display:grid;place-items:center;font-weight:800;margin-bottom:16px}
+.card h3{font-size:21px;margin-bottom:8px;color:var(--c1)}
+.card p{color:var(--muted);font-size:15px}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:14px;margin-top:44px}
+.gal img{width:100%;height:100%;object-fit:cover;border-radius:16px;display:block}
+.gal.n5 img:first-child{grid-row:span 2}
+.gal.n4{grid-template-columns:1fr 1fr;grid-auto-rows:320px}
+.gal.n3{grid-auto-rows:380px}
+.wm{position:absolute;inset:0;pointer-events:none;z-index:50;background-image:url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20width%3D%27560%27%20height%3D%27300%27%3E%3Ctext%20x%3D%2720%27%20y%3D%27170%27%20transform%3D%27rotate%28-22%20280%20150%29%27%20font-family%3D%27Inter%2CArial%27%20font-size%3D%2722%27%20font-weight%3D%27700%27%20fill%3D%27rgba%280%2C0%2C0%2C0.075%29%27%3EDesign%20preview%20for%20Blackland%20Home%20Maintenance%3C/text%3E%3Ctext%20x%3D%2720%27%20y%3D%27200%27%20transform%3D%27rotate%28-22%20280%20150%29%27%20font-family%3D%27Inter%2CArial%27%20font-size%3D%2722%27%20font-weight%3D%27700%27%20fill%3D%27rgba%28255%2C255%2C255%2C0.10%29%27%3EDesign%20preview%20for%20Blackland%20Home%20Maintenance%3C/text%3E%3C/svg%3E");background-repeat:repeat}
+.ribbon{position:absolute;left:50%;transform:translateX(-50%);top:0;z-index:60;background:#111;color:#fff;font:600 12px/1 Inter,sans-serif;letter-spacing:.08em;padding:8px 16px;border-radius:0 0 10px 10px;opacity:.85}
+.rev{background:#fff}
+.rq{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
+.rq .card{background:var(--bg);box-shadow:none;border:1px solid color-mix(in srgb,var(--ink) 8%,transparent)}
+.rq q{display:block;font-size:17px;margin:12px 0 18px;quotes:"\201C" "\201D"}
+.rq small{font-weight:700}
+.gbadge{display:inline-flex;align-items:center;gap:12px;background:var(--bg);border-radius:999px;padding:10px 18px;margin-top:20px;font-weight:600}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center}
+.about img{width:100%;height:460px;object-fit:cover;border-radius:22px}
+.steps{display:grid;gap:14px;margin-top:28px}
+.steps div{display:flex;gap:14px;align-items:flex-start}
+.steps b{flex:0 0 30px;height:30px;border-radius:50%;background:var(--c1);color:#fff;display:grid;place-items:center;font-size:14px}
+.band{background:var(--c1);color:#fff;border-radius:28px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:30px}
+.band h2{font-size:40px;max-width:560px}
+footer{padding:40px 0 60px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between}
+/* app pages */
+.app{max-width:1060px;margin:48px auto 90px;display:grid;grid-template-columns:1fr 340px;gap:28px;padding:0 28px}
+.panel{background:#fff;border-radius:22px;padding:36px;box-shadow:0 10px 40px -24px rgba(0,0,0,.35)}
+.prog{display:flex;gap:8px;margin:18px 0 30px}
+.prog i{flex:1;height:6px;border-radius:9px;background:color-mix(in srgb,var(--ink) 10%,white)}
+.prog i.on{background:var(--c2)}
+.lbl{font-weight:700;margin:22px 0 10px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:12px 16px;border-radius:12px;border:1.5px solid color-mix(in srgb,var(--ink) 14%,white);font-weight:600;font-size:15px;background:#fff}
+.chip.on{border-color:var(--c2);background:color-mix(in srgb,var(--c2) 10%,white);color:var(--c1)}
+.inp{width:100%;padding:14px 16px;border-radius:12px;border:1.5px solid color-mix(in srgb,var(--ink) 14%,white);font:inherit;font-size:15px;background:#fff;color:var(--ink)}
+textarea.inp{height:96px;resize:none}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.drop{border:2px dashed color-mix(in srgb,var(--ink) 18%,white);border-radius:14px;padding:22px;text-align:center;color:var(--muted);font-size:14px}
+.side img{width:100%;height:200px;object-fit:cover;border-radius:16px;margin-bottom:16px}
+.side .card{padding:22px}
+.side li{list-style:none;padding:8px 0;border-bottom:1px solid #eee;font-size:14.5px;display:flex;gap:10px}
+.side li:last-child{border:0}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px;text-align:center;font-size:14px}
+.cal span{padding:10px 0;border-radius:10px}
+.cal .dw{font-weight:700;color:var(--muted);font-size:12px}
+.cal .av{background:color-mix(in srgb,var(--c2) 12%,white);font-weight:700;color:var(--c1)}
+.cal .sel{background:var(--c2);color:#fff;font-weight:800}
+.cal .off{color:#c4c4c4}
+.slots{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.slots span{padding:12px;border-radius:12px;border:1.5px solid color-mix(in srgb,var(--ink) 14%,white);text-align:center;font-weight:600}
+.slots .sel{border-color:var(--c2);background:var(--c2);color:#fff}
+.note{font-size:13px;color:var(--muted);margin-top:14px}
+</style></head><body style="position:relative"><nav><div class="wrap"><a class="brand" href="index.html"><span class="mark">B</span>Blackland Home Maintenance</a>
+<div class="links"><a href="index.html#services">Services</a><a href="index.html#work">Our work</a><a href="index.html#reviews">Reviews</a>
+<a href="tel:2092777526">(209) 277-7526</a><a class="btn p" href="quote.html">Get a quote</a></div></div></nav>
+<header class="hero"><div class="txt">
+<div class="eyebrow">Carpentry, built-ins &amp; home repair · North Austin · Pflugerville</div>
+<h1>Custom built-ins and carpentry for North Austin.</h1><p>15 years turning bland walls into built-in TV walls, shiplap, wainscoting and storage. Josh does the work himself.</p>
+<div class="ctas"><a class="btn p" href="quote.html">Get a quote →</a><a class="btn s" href="book.html">Pick a time</a></div>
+</div><div class="ph"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9ReY8ujtEeXr5Yk_uAMKWHmZJ-UB-Z36slj3b-CfJfalp5GCzzzSV2q2nR9sHyH87CAeT-JUV9esvXrb4j7HdWKSVJsvoLoIrALYTmnD96eebJZrQXE7hn43zV1YrxvT9wSLoYG3kP7f0M=w1600" alt="" style="object-position:center"><div class="badge"><span class="stars">★★★★★</span><b>4.9 on Google</b>66 reviews from local customers</div></div></header>
+<div class="trust"><div class="wrap">
+<div><b>4.9 ★</b><span>66 Google reviews</span></div>
+<div><b>Local & owner-run</b><span>North Austin</span></div>
+<div><b>Quote online</b><span>Answer a few questions, get a call back</span></div>
+<div><b>(209) 277-7526</b><span>Call or text</span></div></div></div>
+<section id="services"><div class="wrap"><div class="eyebrow" style="color:var(--c2)">What we do</div>
+<h2 class="h2">Services</h2><p class="lead">Blackland Home Maintenance is Josh, a carpenter with 15 years of experience serving the North Austin area.</p><div class="svc"><div class="card"><div class="n">01</div><h3>Custom built-ins</h3><p>TV and fireplace walls, bookshelves and cabinet storage made to fit.</p></div><div class="card"><div class="n">02</div><h3>Accent walls</h3><p>Shiplap, board and batten, wainscoting and wallpaper.</p></div><div class="card"><div class="n">03</div><h3>Porch enclosures</h3><p>Turn a back porch into finished living space.</p></div><div class="card"><div class="n">04</div><h3>Carpentry repairs</h3><p>Fascia, trim, flooring, kitchen and laundry updates.</p></div></div></div></section>
+<section id="work" style="padding-top:0"><div class="wrap"><div class="eyebrow" style="color:var(--c2)">Recent work</div>
+<h2 class="h2">Real projects from real Austin-area homes.</h2><div class="gal n5"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RMHjLb-3SMKJW5NivDpERunfSL1WOmlm_1KLAWzCCrGGXAfo5f0rFggaZs5yNL9Q84FHQpncDF9XdbDmdIxwUFfZsCHJlSCF5oWWkki_FoAIgUtOzHSxyNldLsbZCgJOwoS82dVA=w1600" alt=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9R_Eq-hpxIH3RsRSDOftTAB6cKdc5SHBsJgbXZ1ElfGEEFOlNvLFPXSPMpV4YE9VxFlOih9ENYqhGkypFM4uhZtf5MMyw7opuvJg3vXsFNh_g2cPGCJA-fhGwkwuRIZnu3VLZPInz8vG6Kn=w1600" alt=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9QXcLJYkWQQzcT_MJZomcC9aaWT2h6TG2zVBaV6OAG1mkzvxeopFpjNT1NB04IqVRgu-8tqkafoqmcSNM8cUejq8YdVBBWKy7YqKN__j9sPcf-4pH9YleKENN8yyNcQ5aHGLopx=w1600" alt=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SenqvAAdRKr66cw3Q9S6BoRZpXnxhAHQIOLzEb2rpZEsBTMVy2xpiAervNv27zKXsnyOdtB7NA3MryBmY3LkdIlVvyqrSGYiASKU47GH5aYN1YtxB81BOqR4yTZ2l8mYxWPPcK=w1600" alt=""><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SEa2dbr3QFUi7QTILFzElPx6DoAOZa3IACIBiKctZqkRmgQXh1sPYIcyEmJiXA8jh1iM77kjsZnUUo0tIk2XG4PdTH55G4j--OfFVRnl88K_8JJf8R-TDzFL1Jm2eC5isIzKrd=w1600" alt=""></div></div></section>
+<section id="reviews" class="rev"><div class="wrap"><div class="eyebrow" style="color:var(--c2)">Reviews</div>
+<h2 class="h2">What customers say</h2><div class="gbadge"><span class="stars">★★★★★</span>4.9 average · 66 reviews on Google</div>
+<div class="rq"><div class="card"><div class="stars">★★★★★</div><q>Josh did an excellent job helping us transform a bland family room wall into a custom built in tv, electric fireplace, cabinet storage and shelf wall.</q><small>Mike Darrow</small> <span style="color:var(--muted);font-size:13px">· Google review</span></div><div class="card"><div class="stars">★★★★★</div><q>We cannot speak highly enough of their timeliness, professionalism and transparency.</q><small>Dalton Darrow</small> <span style="color:var(--muted);font-size:13px">· Google review</span></div><div class="card"><div class="stars">★★★★★</div><q>Very responsive, professional, and reasonably priced.</q><small>Michael Choate</small> <span style="color:var(--muted);font-size:13px">· Google review</span></div></div></div></section>
+<section><div class="wrap about"><div><div class="eyebrow" style="color:var(--c2)">How it works</div>
+<h2 class="h2">From first call to finished job.</h2>
+<div class="steps"><div><b>1</b><p><strong>Tell us about the job.</strong> Two minutes online, photos optional.</p></div>
+<div><b>2</b><p><strong>Pick a time.</strong> Choose a visit slot that works for you.</p></div>
+<div><b>3</b><p><strong>Get a clear quote.</strong> No surprises, no pressure.</p></div></div>
+<div style="margin-top:30px;display:flex;gap:12px"><a class="btn d" href="quote.html">Get a quote</a><a class="btn s" href="book.html">See open times</a></div></div>
+<img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SzCfmM-6HkNYEPvy2nNq5shBqrK-SAdJ-Ar-7tE1UdkLi_Wj7hnae3On9qzibCzbOOgY93CM6XqNu44H1zSwd7e1y2FR_lo0RW6nqrcsVHq_Cx1mKfsQQDPGUFVfr9Y2BtLIKQ_VtKD1zF=w1600" alt=""></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="band"><h2>Ready when you are. Get your quote in two minutes.</h2>
+<div style="display:flex;gap:12px"><a class="btn p" href="quote.html">Get a quote</a><a class="btn s" href="tel:2092777526">(209) 277-7526</a></div></div></div></section>
+<footer><div class="wrap"><span>© 2026 Blackland Home Maintenance · North Austin · Pflugerville</span><span>(209) 277-7526</span></div></footer></body></html>
